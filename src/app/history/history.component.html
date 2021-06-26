@@ -1,0 +1,8 @@
+<body>
+    hi
+    <div [ngStyle]="RedOrGreenBackground(1)" *ngIf="currentQuestionNo >1">{{questions[0].getCaption()}}</div>
+    <div [ngStyle]="RedOrGreenBackground(2)" *ngIf="currentQuestionNo >2">{{questions[1].getCaption()}}</div>
+    <div [ngStyle]="RedOrGreenBackground(3)" *ngIf="currentQuestionNo >3">{{questions[2].getCaption()}}</div>
+    <div [ngStyle]="RedOrGreenBackground(4)" *ngIf="currentQuestionNo >4">{{questions[3].getCaption()}}</div>
+
+</body>

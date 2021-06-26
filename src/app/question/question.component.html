@@ -1,0 +1,23 @@
+<!-- <p>question works!</p> -->
+
+<!-- <div class = "containerQuestion">
+    <div class="questions">{{question.getCaption()}} </div>
+</div>
+    <div class = "containerAnswers">
+        <button class="answer">{{question.getAnswers()[0]}}</button>
+        <button class="answer">{{question.getAnswers()[1]}}</button>
+        <button class="answer">{{question.getAnswers()[2]}}</button>
+        <button class="answer">{{question.getAnswers()[3]}}</button>
+    </div>
+<button (click)="clickNext()" >next</button> -->
+
+<div class = "container">
+    <div class="questions">{{question.getCaption()}} </div>
+
+        <!-- todo: make new component for each button answer -->
+        <button (click)="choosenAnswer(1)" class="answer">{{question.getAnswers()[0]}}</button>
+        <button (click)="choosenAnswer(2)" class="answer">{{question.getAnswers()[1]}}</button>
+        <button (click)="choosenAnswer(3)" class="answer">{{question.getAnswers()[2]}}</button>
+        <button (click)="choosenAnswer(4)" class="answer">{{question.getAnswers()[3]}}</button>
+    <button class = "next" id = "nextButton" (click)="clickNext()" >next</button>
+</div>
